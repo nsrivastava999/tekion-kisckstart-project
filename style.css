@@ -1,0 +1,24 @@
+body{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.navbar-left{
+    float: left;
+    width: 350px;
+}
+.navbar-right{
+    float: right;
+    width: 350px;
+}
+.navbar {
+    padding: 3%;
+}
+.navbar-left a, .navbar-right a{
+    margin: 2% 8%;
+    text-decoration: none;
+    color: black;
+}
+.navbar-left a:hover, .navbar-right a:hover{
+    color: orange;
+}
