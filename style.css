@@ -99,3 +99,37 @@ table{
 .offer-header{
     font-size: 120%;
 }
+.search-area{
+    width: 50%;
+    margin: 5% auto;
+    padding-top: 10%;
+    /* display: inline-block; */
+}
+.search-bar{
+    float: left;
+    width: 45%;
+    height: 100px;
+}
+.veg-tick{
+    float: left;
+    width: 20%;
+    padding-top: 3%;
+}
+.fav-tick{
+    float: right;
+    width: 20%;
+    padding-top: 3%;
+}
+input[type=text] {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+.veg-tick:hover{
+    color: green;
+    cursor: pointer;
+}
+.fav-tick:hover{
+    color: red;
+    cursor: pointer;
+}
