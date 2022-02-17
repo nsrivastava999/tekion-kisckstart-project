@@ -133,3 +133,158 @@ input[type=text] {
     color: red;
     cursor: pointer;
 }
+
+.body-container{
+    display: table;
+}
+.left-panel{
+    /* float: left;*/
+    width: 25%; 
+    display: table-cell;
+    padding: 20px 30px 0 0;
+}
+.middle-panel{
+    /* float: left;*/
+    width: 50%; 
+    display: table-cell;
+    padding: 0 40px 20px 20px;
+    border-left: 1px solid #d9d9d9;
+}
+.right-panel{
+    /* float: right;*/
+    width: 25%; 
+    display: table-cell;
+    padding-left: 20px;
+}
+
+.left-panel ul{
+    list-style-type: none;
+    text-align: right;
+}
+.left-panel ul li{
+    padding: 2% 0;
+}
+.left-panel ul li a:hover{
+    color: orange;
+}
+.left-panel ul li a{
+    text-align: right;
+    color: black;
+}
+
+.item-card{
+    border-bottom: 1px solid grey;
+    padding: 30px 0;
+}
+.item-card:last-child{
+    border: none;
+}
+.item-intro{
+    float: left;
+    width: 80%;
+}
+.item-name{
+    font-size: 20px;
+    padding-bottom:16px;
+}
+.item-price{
+    padding-bottom: 16px;
+}
+.item-img{
+    float: right;
+    width: 20%;
+    text-align: right;
+    padding-bottom: 16px;
+}
+.item-img img{
+    width: 120px;
+}
+.item-img button{
+    background-color: white; 
+    border: 2px solid grey;
+    color: #4CAF50;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 16px 4px 4px 20px;
+    cursor: pointer;
+}
+.item-desc p{
+    font-size: 14px;
+    color: #a6a6a6;
+}
+
+.cart-img img{
+    width: 300px;
+}
+.cart-footer p, .cart-header h2{
+    color: #a6a6a6;
+}
+
+.restaurant-address{
+    background-color: #f2f2f2;
+}
+.address-desc{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.address-desc p, .cuisines p{
+    color: #a6a6a6;
+}
+.cuisines{
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+.license .license-img img{
+    text-align: center;
+}
+img.fssai{
+    left: 50%;
+    width: 100px;
+    margin: 50px 100px 0 0;
+}
+.license-no{
+    text-align: center;
+    color: #a6a6a6;
+}
+.license-no p{
+    margin-bottom: 0;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: table;
+    width: 97%;
+}
+.footer-logo{
+    display: table-cell;
+    width: 33%;
+}
+.copyright{
+    display: table-cell;
+    width: 33%;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.social-media{
+    display: table-cell;
+    width: 33%;
+    text-align: right;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+.footer-logo img{
+    width: 200px;
+    padding: 0 50px;
+}
+.social-media img{
+    width: 30px;
+    padding-bottom: 10px;
+}
