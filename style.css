@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     width: 70%;
     margin: 0 auto;
@@ -170,6 +174,13 @@ input[type=text] {
 .left-panel ul li a{
     text-align: right;
     color: black;
+}
+
+.menu-section{
+    border-bottom: 1px solid grey;
+}
+.menu-section:last-child{
+    border: none;
 }
 
 .item-card{
