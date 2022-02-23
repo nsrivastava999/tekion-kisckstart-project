@@ -2,6 +2,7 @@
 //     .then(res => console.log(res));
 
 var sectionHTML = "";
+var leftHTML = "<ul>";
 
 function getRestaurantData(){
     fetch("./restaurant_content.json")
@@ -16,7 +17,9 @@ function getRestaurantData(){
                 var currentSection = sectionData[sectionIndex];
                 sectionHTML += "<div class=\"menu-section\">";
                 sectionHTML += "<div class=\"menu-type\"> <h2 class=\"menu-header\" id=\""+currentSection.sectionId+"\">"+currentSection.sectionName;
-                sectionHTML += "</h2> <span class=\"menu-count\">"+ currentSection.sectionItems.length +" items</span> </div>"
+                sectionHTML += "</h2> <span class=\"menu-count\">"+ currentSection.sectionItems.length +" items</span> </div>";
+
+                leftHTML += "<li><a href=\"#"+currentSection.sectionId+"\">"+currentSection.sectionName+"</a></li>";
                 // console.log(sectionHTML);
                 var sectionItems = currentSection.sectionItems;
                 for(let itemIndex = 0; itemIndex < sectionItems.length; itemIndex++){
@@ -32,6 +35,8 @@ function getRestaurantData(){
                 console.log(sectionHTML);
             }
             document.querySelector(".middle-panel").innerHTML = sectionHTML;
+            leftHTML += "</ul>";
+            document.querySelector(".left-panel").innerHTML = leftHTML;
 
         }).catch(err => {
             console.log(err);
