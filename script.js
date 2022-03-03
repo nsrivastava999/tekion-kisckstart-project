@@ -70,6 +70,8 @@ function generateLeftMenuList(menuData){
     var leftMenuList = document.createElement("ul");
     for(let index = 0; index < menuData.length; index++){
         var leftMenuListItem = generateLeftMenuListItem(menuData[index]);
+        if(leftMenuList.hasChildNodes() == false)
+            leftMenuListItem.classList.add("active-left");
         leftMenuList.append(leftMenuListItem);
     }
     return leftMenuList;
@@ -78,6 +80,8 @@ function generateLeftMenuList(menuData){
 
 function generateLeftMenuListItem(menuItem){
     var leftMenuListItem = document.createElement("li");
+    leftMenuListItem.classList.add("left-menu-list");
+    leftMenuListItem.classList.add(menuItem.sectionId);
 
     var leftMenuListItemAnchor = document.createElement("a");
     leftMenuListItemAnchor.setAttribute("href","#"+menuItem.sectionId);
@@ -105,20 +109,24 @@ function generateMenuSection(currentSection){
 
     var sectionItems = currentSection.sectionItems;
     var menuSection = document.createElement("div");
+    menuSection.classList.add("section-menu");
+
     var menuType = generateMenuType(currentSection);
     // console.log(currentSection)
     menuSection.append(menuType);
     for(let index = 0; index < sectionItems.length; index++){
-        // console.log(currentSection[index]);
+        // console.log(sectionItems[index]);
         var currentItem = sectionItems[index];
         var itemCard = generateItemCard(currentItem);
         menuSection.append(itemCard);
     }
+    // console.log(menuSection)
     return menuSection;
 }
 
 function generateMenuType(currentSection){
     var menuType = document.createElement("div");
+    menuType.classList.add("menu-type");
 
     var menuHeader = document.createElement("h2");
     menuHeader.classList.add("menu-header");
@@ -202,3 +210,41 @@ function generateItemDesc(currentSection){
 }
 
 getRestaurantData();
+
+// document.addEventListener("DOMContentLoaded", function(event) {
+//     // Your code to run since DOM is loaded and ready
+    // var leftMenuList = document.querySelector(".left-panel ul");
+    // console.log(leftMenuList);
+//     // console.log("asdasda")
+// });
+
+if( document.readyState !== 'loading' ) {
+    ready();
+} else {
+    document.addEventListener('DOMContentLoaded', function () {
+        ready();
+    });
+}
+
+function ready() {
+    var leftMenuList = document.getElementsByClassName("left-menu-list");
+    var sections = document.getElementsByClassName("menu-header");
+    // console.log(leftMenuList);
+    
+    window.addEventListener("scroll",function(){
+        let currentItem = "";
+        for(let index = 0; index < sections.length; index++){
+            var sectionTop = sections[index].offsetTop;
+            if(pageYOffset >= (sectionTop - 250)){
+                currentItem = sections[index].getAttribute("id");
+            }
+        }
+        // console.log(currentItem);
+        for(let index = 0; index < leftMenuList.length; index++){
+            leftMenuList[index].classList.remove("active-left");
+            if(leftMenuList[index].classList.contains(currentItem)){
+                leftMenuList[index].classList.add("active-left");
+            }
+        }
+    })
+}

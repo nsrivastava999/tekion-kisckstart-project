@@ -159,11 +159,16 @@ input[type=text] {
     width: 25%; 
     display: table-cell;
     padding-left: 20px;
+    position: sticky;
+    top: 0;
 }
 
 .left-panel ul{
     list-style-type: none;
     text-align: right;
+    position: sticky;
+    top: 0;
+    padding-top: 20px;
 }
 .left-panel ul li{
     padding: 2% 0;
@@ -174,6 +179,9 @@ input[type=text] {
 .left-panel ul li a{
     text-align: right;
     color: black;
+}
+.active-left a{
+    color: #ff6600 !important;
 }
 
 .menu-section{
@@ -227,6 +235,11 @@ input[type=text] {
     color: #a6a6a6;
 }
 
+.cart-container{
+    position: sticky;
+    top: 0;
+    padding-top: 20px;
+}
 .cart-img img{
     width: 300px;
 }
