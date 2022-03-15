@@ -3,24 +3,26 @@ html{
 }
 
 body{
-    width: 70%;
-    margin: 0 auto;
     font-family: Arial;
 }
-
+.content{
+    max-width: 1150px;
+    margin: 0 auto;
+    background-color: white;
+}
 a{
     text-decoration: none;
 }
 .navbar-left{
-    float: left;
     width: 350px;
 }
 .navbar-right{
-    float: right;
     width: 350px;
 }
 .navbar {
     padding: 3%;
+    display: flex;
+    justify-content: space-between;
 }
 .navbar-left a, .navbar-right a{
     margin: 2% 8%;
@@ -39,10 +41,13 @@ a{
     color: black;
 }
 .restaurant-about{
-    padding: 5%;
+    padding: 30px;
     background-color: #262626;
     color: white;
-    height: 200px;
+    height: 220px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .restaurant-image img{
     width: 80%;
@@ -50,18 +55,15 @@ a{
 .restaurant-image{
     float: left;
     width: 30%;
-    /* height: 100px; */
 }
 .restaurant-details{
     float: left;
     width: 45%;
-    /* height: 100px; */
 }
 .restaurant-offer{
     float: right;
     width: 25%;
-    /* height: 100px; */
-    /* padding: 0% 4%; */
+
 }
 .restaurant-type{
     padding: 2% 0;
@@ -107,7 +109,6 @@ table{
     width: 50%;
     margin: 5% auto;
     padding-top: 10%;
-    /* display: inline-block; */
 }
 .search-bar{
     float: left;
@@ -140,34 +141,32 @@ input[type=text] {
 
 .body-container{
     display: table;
+    width: 100%;
 }
 .left-panel{
-    /* float: left;*/
     width: 25%; 
     display: table-cell;
     padding: 20px 30px 0 0;
 }
 .middle-panel{
-    /* float: left;*/
     width: 50%; 
     display: table-cell;
-    padding: 0 40px 20px 20px;
+    padding: 0 25px;
     border-left: 1px solid #d9d9d9;
 }
 .right-panel{
-    /* float: right;*/
     width: 25%; 
     display: table-cell;
-    padding-left: 20px;
+    padding: 0 20px;
     position: sticky;
-    top: 0;
+    top: 260px;
 }
 
 .left-panel ul{
     list-style-type: none;
     text-align: right;
     position: sticky;
-    top: 0;
+    top: 270px;
     padding-top: 20px;
 }
 .left-panel ul li{
@@ -184,24 +183,23 @@ input[type=text] {
     color: #ff6600 !important;
 }
 
-.menu-section{
-    border-bottom: 1px solid grey;
+.section-menu{
+    border-bottom: 3x solid grey;
 }
-.menu-section:last-child{
+.section-menu:last-child{
     border: none;
 }
 
 .item-card{
     border-bottom: 1px solid grey;
     padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
 }
 .item-card:last-child{
     border: none;
 }
-.item-intro{
-    float: left;
-    width: 80%;
-}
+
 .item-name{
     font-size: 20px;
     padding-bottom:16px;
@@ -210,10 +208,7 @@ input[type=text] {
     padding-bottom: 16px;
 }
 .item-img{
-    float: right;
-    width: 20%;
-    text-align: right;
-    padding-bottom: 16px;
+    text-align: center;
 }
 .item-img img{
     width: 120px;
@@ -227,24 +222,94 @@ input[type=text] {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 16px 4px 4px 20px;
     cursor: pointer;
+    position: relative;
+    top: -12px;
+}
+.item-img .new-add-button{
+    margin: 0 20px;
+    position: relative;
+    top:-12px;
+}
+.new-add-button{
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    background-color: white;
 }
 .item-desc p{
     font-size: 14px;
     color: #a6a6a6;
 }
+span.item-count-in-button, span.plus-sign{
+    color: green;
+}
+span.item-count-in-button{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding: 0 5px;
+}
 
-.cart-container{
+.empty-cart-container{
     position: sticky;
-    top: 0;
+    top: 270px;
     padding-top: 20px;
 }
 .cart-img img{
-    width: 300px;
+    width: 250px;
 }
 .cart-footer p, .cart-header h2{
     color: #a6a6a6;
+}
+
+.cart-content{
+    position: sticky;
+    top: 260px;
+    padding: 10px 0;
+}
+.cart-item-strength{
+    padding: 5px 0;;
+}
+.cart-element{
+    display: table;
+    width: 100%;
+    padding: 5px 0;
+}
+.cart-element-name{
+    display: table-cell;
+    width: 50%;
+}
+.cart-element-quantity{
+    display: table-cell;
+    width: 25%;
+}
+.cart-item-price{
+    display: table-cell;
+    width: 20%;
+    text-align: right;
+}
+.cart-subtotal{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cart-message{
+    font-size: 14px;
+    color: #a6a6a6;
+}
+.checkout-button{
+    padding: 15px 0;
+    margin: 15px 0;
+    cursor: pointer;
+    background-color: #00b300;
+    color: white;
+    text-align: center;
 }
 
 .restaurant-address{

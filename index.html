@@ -8,333 +8,146 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="navbar-left">
-            <a class="logo" href="#">Swiggy</a>
-            <a href="#">Choose Location</a>
-        </div>
-        <div class="navbar-right">
-            <a href="#">Help</a>
-            <a href="#">Sign In</a>
-            <a href="#">Cart</a>
-        </div>
-    </div>
-
-    <div class="page-locator">
-        <a href="#">Home / Bangalore / BTM - Bangalore / Kitchens of Punjab</a>
-    </div>
-
-    <div class="restaurant-about">
-        <div class="about-container">
-            <div class="restaurant-image">
-                <img src="images/food_image.jpeg">
+    <div class="content">
+        <div class="navbar">
+            <div class="navbar-left">
+                <a class="logo" href="#">Swiggy</a>
+                <a href="#">Choose Location</a>
             </div>
-
-            <div class="restaurant-details">
-                <div class="restaurant-name">
-                    <h2>Kitchens of Punjab</h2>
-                </div>
-                <div class="restaurant-type">
-                    <div>Punjabi, North Indian</div>
-                    <div>Bilekahalli, BTM - Bangalore</div>
-                </div>
-                <div class="restaurant-details-desc">
-                    <div class="restaurant-ratings">
-                        <div class="rating-stars">⭐️ 4.1</div>
-                        <div class="rating-count">100+ Ratings</div>
-                    </div>
-                    <div class="restaurant-time">
-                        <div class="time-mins">-- mins</div>
-                        <div class="time-about">Delivery Time</div>
-                    </div>
-                    <div class="restaurant-cost">
-                        <div class="details-cost">$ 200</div>
-                        <div class="details-cost-about">Cost for two</div>
-                    </div>
-                </div>
-
+            <div class="navbar-right">
+                <a href="#">Help</a>
+                <a href="#">Sign In</a>
+                <a href="#">Cart</a>
             </div>
+        </div>
 
-            <div class="restaurant-offer">
-                <!-- <div class="offer-header">OFFER</div>
+        <div class="page-locator">
+            <a href="#">Home / Bangalore / BTM - Bangalore / Kitchens of Punjab</a>
+        </div>
+
+        <div class="restaurant-about">
+            <div class="about-container">
+                <div class="restaurant-image">
+                    <img src="images/food_image.jpeg">
+                </div>
+
+                <div class="restaurant-details">
+                    <div class="restaurant-name">
+                        <h2>Kitchens of Punjab</h2>
+                    </div>
+                    <div class="restaurant-type">
+                        <div>Punjabi, North Indian</div>
+                        <div>Bilekahalli, BTM - Bangalore</div>
+                    </div>
+                    <div class="restaurant-details-desc">
+                        <div class="restaurant-ratings">
+                            <div class="rating-stars">⭐️ 4.1</div>
+                            <div class="rating-count">100+ Ratings</div>
+                        </div>
+                        <div class="restaurant-time">
+                            <div class="time-mins">-- mins</div>
+                            <div class="time-about">Delivery Time</div>
+                        </div>
+                        <div class="restaurant-cost">
+                            <div class="details-cost">$ 200</div>
+                            <div class="details-cost-about">Cost for two</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="restaurant-offer">
+                    <!-- <div class="offer-header">OFFER</div>
             <div class="offer-1">⦿ 20% off | Use code PARTY</div>
             <div class="offer-2">⦿ 30% off up to ₹150 on orders above ₹400 | Use code JUMBO</div> -->
-                <fieldset>
-                    <legend class="offer-header">OFFER</legend>
-                    <table>
-                        <tr>
-                            <td class="offer-1">⦿ 20% off | Use code PARTY</td>
-                        </tr>
-                        <tr>
-                            <td class="offer-2">⦿ 30% off up to ₹150 on orders above ₹400 | Use code JUMBO</td>
-                        </tr>
-                    </table>
-                </fieldset>
+                    <fieldset>
+                        <legend class="offer-header">OFFER</legend>
+                        <table>
+                            <tr>
+                                <td class="offer-1">⦿ 20% off | Use code PARTY</td>
+                            </tr>
+                            <tr>
+                                <td class="offer-2">⦿ 30% off up to ₹150 on orders above ₹400 | Use code JUMBO</td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="search-area">
+                <div class="search-bar">
+                    <input type="text" placeholder="🔎 Search for Dishes...">
+                </div>
+                <div class="veg-tick">
+                    <input type="checkbox" class="veg-checkbox"> Veg Only
+                </div>
+                <div class="fav-tick">
+                    <input type="checkbox" class="fav-checkbox"> Favourite
+                </div>
+            </div>
+
+        </div>
+
+        <div class="body-container">
+            <div class="left-panel" id="left-panel">
+                
+            </div>
+            <div class="middle-panel" id="middle-panel">
+                
+            </div>
+            <div class="right-panel">
+                <div class="empty-cart-container">
+                    <div class="cart-header">
+                        <h2>Cart Empty</h2>
+                    </div>
+                    <div class="cart-img"><img src="images/cart_image.png"></div>
+                    <div class="cart-footer">
+                        <p>Good food is always cooking! Go ahead, order some yummy items from the menu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant-address">
+            <div class="address-container">
+                <div class="address-desc">
+                    <h5>ADDRESS</h5>
+                    <p>
+                        Kitchens of Punjab, Gilly's Resto Bar,<br>No.175/176 The Pavilion, Bannerghatta Main
+                        Road,<br>Bilekahalli, Opp. Brand Factory,<br>Bangalore - 560074
+                    </p>
+                </div>
+                <div class="cuisines">
+                    <h5>CUISINES</h5>
+                    <p>
+                        Punjabi, North Indian
+                    </p>
+                </div>
+            </div>
+            <div class="license">
+                <div class="license-img">
+                    <img src="images/fssai.jpeg" class="fssai">
+                </div>
+                <div class="license-no">
+                    <p><strong> License No. 11219334000233</strong></p>
+                </div>
             </div>
         </div>
 
-        <div class="search-area">
-            <div class="search-bar">
-                <input type="text" placeholder="🔎 Search for Dishes...">
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="images/logo.jpeg">
             </div>
-            <div class="veg-tick">
-                <input type="checkbox" class="veg-checkbox"> Veg Only
+            <div class="copyright">
+                <p>&copy Swiggy</p>
             </div>
-            <div class="fav-tick">
-                <input type="checkbox" class="fav-checkbox"> Favourite
+            <div class="social-media">
+                <a href="#"><img src="images/insta.jpeg"></a>
+                <a href="#"><img src="images/fb.jpeg"></a>
+                <a href="#"><img src="images/twitter.jpeg"></a>
             </div>
-        </div>
-
-    </div>
-
-    <div class="body-container">
-        <div class="left-panel" id="left-panel">
-            <!-- <ul>
-                <li><a href="#recommended">Recommended</a></li>
-                <li><a href="#platters">Platters</a></li>
-                <li><a href="#starters">Starters</a></li>
-                <li><a href="#familyPack">Family Pack</a></li>
-                <li><a href="#mainCourse">Main Course</a></li>
-                <li><a href="#riceBreads">Rice & Breads</a></li>
-                <li><a href="#desserts">Desserts</a></li>
-            </ul> -->
-        </div>
-        <div class="middle-panel" id="middle-panel">
-            <!-- <div class="menu-section">
-                <div class="menu-type">
-                    <h2 class="menu-header" id="recommended">Recommended</h2>
-                    <span class="menu-count">4 items</span>
-                </div>
-
-                <div class="item-card">
-                    <div class="item-head">
-                        <div class="item-intro">
-                            <div class="item-name">Veg Platter</div>
-                            <div class="item-price">$ 500</div>
-                        </div>
-                        <div class="item-img">
-                            <img src="images/food_image.jpeg">
-                            <a href="#"><button>Add</button></a>
-                        </div>
-                    </div>
-                    <div class="item-desc">
-                        <p> An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap.</p>
-                    </div>
-                </div>
-
-                <div class="item-card">
-                    <div class="item-head">
-                        <div class="item-intro">
-                            <div class="item-name">Veg Platter</div>
-                            <div class="item-price">$ 500</div>
-                        </div>
-                        <div class="item-img">
-                            <img src="images/food_image.jpeg">
-                            <a href="#"><button>Add</button></a>
-                        </div>
-                    </div>
-                    <div class="item-desc">
-                        <p> An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap.</p>
-                    </div>
-                </div>
-
-                <div class="item-card">
-                    <div class="item-head">
-                        <div class="item-intro">
-                            <div class="item-name">Veg Platter</div>
-                            <div class="item-price">$ 500</div>
-                        </div>
-                        <div class="item-img">
-                            <img src="images/food_image.jpeg">
-                            <a href="#"><button>Add</button></a>
-                        </div>
-                    </div>
-                    <div class="item-desc">
-                        <p> An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap.</p>
-                    </div>
-                </div>
-
-                <div class="item-card">
-                    <div class="item-head">
-                        <div class="item-intro">
-                            <div class="item-name">Veg Platter</div>
-                            <div class="item-price">$ 500</div>
-                        </div>
-                        <div class="item-img">
-                            <img src="images/food_image.jpeg">
-                            <a href="#"><button>Add</button></a>
-                        </div>
-                    </div>
-                    <div class="item-desc">
-                        <p> An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-type">
-                    <h2 class="menu-header" id="platters">Platters</h2>
-                    <span class="menu-count">2 items</span>
-                </div>
-
-                <div class="item-card">
-                    <div class="item-head">
-                        <div class="item-intro">
-                            <div class="item-name">Veg Platter</div>
-                            <div class="item-price">$ 500</div>
-                        </div>
-                        <div class="item-img">
-                            <img src="images/food_image.jpeg">
-                            <a href="#"><button>Add</button></a>
-                        </div>
-                    </div>
-                    <div class="item-desc">
-                        <p> An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap.</p>
-                    </div>
-                </div>
-
-                <div class="item-card">
-                    <div class="item-head">
-                        <div class="item-intro">
-                            <div class="item-name">Veg Platter</div>
-                            <div class="item-price">$ 500</div>
-                        </div>
-                        <div class="item-img">
-                            <img src="images/food_image.jpeg">
-                            <a href="#"><button>Add</button></a>
-                        </div>
-                    </div>
-                    <div class="item-desc">
-                        <p> An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-type">
-                    <h2 class="menu-header" id="starters">Starters</h2>
-                    <span class="menu-count">2 items</span>
-                </div>
-
-                <div class="item-card">
-                    <div class="item-head">
-                        <div class="item-intro">
-                            <div class="item-name">Veg Platter</div>
-                            <div class="item-price">$ 500</div>
-                        </div>
-                        <div class="item-img">
-                            <img src="images/food_image.jpeg">
-                            <a href="#"><button>Add</button></a>
-                        </div>
-                    </div>
-                    <div class="item-desc">
-                        <p> An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap.</p>
-                    </div>
-                </div>
-
-                <div class="item-card">
-                    <div class="item-head">
-                        <div class="item-intro">
-                            <div class="item-name">Veg Platter</div>
-                            <div class="item-price">$ 500</div>
-                        </div>
-                        <div class="item-img">
-                            <img src="images/food_image.jpeg">
-                            <a href="#"><button>Add</button></a>
-                        </div>
-                    </div>
-                    <div class="item-desc">
-                        <p> An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-type">
-                    <h2 class="menu-header" id="family-pack">Family Pack</h2>
-                    <span class="menu-count">2 items</span>
-                </div>
-
-                <div class="item-card">
-                    <div class="item-head">
-                        <div class="item-intro">
-                            <div class="item-name">Veg Platter</div>
-                            <div class="item-price">$ 500</div>
-                        </div>
-                        <div class="item-img">
-                            <img src="images/food_image.jpeg">
-                            <a href="#"><button>Add</button></a>
-                        </div>
-                    </div>
-                    <div class="item-desc">
-                        <p> An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap.</p>
-                    </div>
-                </div>
-
-                <div class="item-card">
-                    <div class="item-head">
-                        <div class="item-intro">
-                            <div class="item-name">Veg Platter</div>
-                            <div class="item-price">$ 500</div>
-                        </div>
-                        <div class="item-img">
-                            <img src="images/food_image.jpeg">
-                            <a href="#"><button>Add</button></a>
-                        </div>
-                    </div>
-                    <div class="item-desc">
-                        <p> An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap.</p>
-                    </div>
-                </div>
-            </div> -->
-
-        </div>
-        <div class="right-panel">
-            <div class="cart-container">
-                <div class="cart-header"><h2>Cart Empty</h2></div>
-                <div class="cart-img"><img src="images/cart_image.png"></div>
-                <div class="cart-footer"><p>Good food is always cooking! Go ahead, order some yummy items from the menu.</p></div>
-            </div>    
         </div>
     </div>
-    <div class="restaurant-address">
-        <div class="address-container">
-            <div class="address-desc">
-                <h5>ADDRESS</h5>
-                <p>
-                    Kitchens of Punjab, Gilly's Resto Bar,<br>No.175/176 The Pavilion, Bannerghatta Main Road,<br>Bilekahalli, Opp. Brand Factory,<br>Bangalore - 560074
-                </p>
-            </div>
-            <div class="cuisines">
-                <h5>CUISINES</h5>
-                <p>
-                    Punjabi, North Indian
-                </p>
-            </div>
-        </div>
-        <div class="license">
-            <div class="license-img">
-                <img src="images/fssai.jpeg" class="fssai">
-            </div>
-            <div class="license-no"><p><strong> License No. 11219334000233</strong></p></div>
-        </div>
-    </div>
-    
-    <div class="footer">
-        <div class="footer-logo">
-            <img src="images/logo.jpeg">
-        </div>
-        <div class="copyright">
-            <p>&copy Swiggy</p>
-        </div>
-        <div class="social-media">
-            <a href="#"><img src="images/insta.jpeg"></a>
-            <a href="#"><img src="images/fb.jpeg"></a>
-            <a href="#"><img src="images/twitter.jpeg"></a>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 
 </html>
