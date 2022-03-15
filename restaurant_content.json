@@ -1,0 +1,115 @@
+{
+    "menuSections":[{
+        "sectionId": "recommended",
+        "sectionName": "Recommended",
+        "sectionItems": [{
+            "itemId": "vegPlatter",
+            "itemName": "Veg Platter",
+            "itemPrice": 200,
+            "itemImage": "images/food_image.jpeg",
+            "itemVeg": true,
+            "itemDesc": "An authentic mixed platter with 3 pieces of Barnala Methi Chicken, 3 pieces of Chicken Kebab, 3 pieces of Hara Bhara and 3 pieces of Paneer Tikka." 
+        },
+        {
+            "itemId": "nonvegPlatter",
+            "itemName": "Non-Veg Platter",
+            "itemPrice": 300,
+            "itemImage": "images/food_image.jpeg",
+            "itemVeg": false,
+            "itemDesc": "An authentic mixed platter with 3 pieces of Barnala Methi Chicken, 3 pieces of Chicken Kebab, 3 pieces of Hara Bhara and 3 pieces of Paneer Tikka." 
+        },
+        {
+            "itemId": "mixedPlatter",
+            "itemName": "Mixed Platter",
+            "itemPrice": 250,
+            "itemImage": "images/food_image.jpeg",
+            "itemVeg": false,
+            "itemDesc": "An authentic mixed platter with 3 pieces of Barnala Methi Chicken, 3 pieces of Chicken Kebab, 3 pieces of Hara Bhara and 3 pieces of Paneer Tikka." 
+        },
+        {
+            "itemId": "chickenTikka",
+            "itemName": "Chicken Tikka",
+            "itemPrice": 200,
+            "itemImage": "images/food_image.jpeg",
+            "itemVeg": false,
+            "itemDesc": "An authentic mixed platter with 3 pieces of Barnala Methi Chicken, 3 pieces of Chicken Kebab, 3 pieces of Hara Bhara and 3 pieces of Paneer Tikka." 
+        }]
+    },
+    {
+        "sectionId": "platters",
+        "sectionName": "Platters",
+        "sectionItems":[{
+            "itemId": "vegPlatter",
+            "itemName": "Veg Platter",
+            "itemPrice": 200,
+            "itemImage": "images/food_image.jpeg",
+            "itemVeg": true,
+            "itemDesc": "An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap."
+        },{
+            "itemId": "nonvegPlatter",
+            "itemName": "Non-Veg Platter",
+            "itemPrice": 300,
+            "itemImage": "images/food_image.jpeg",
+            "itemVeg": false,
+            "itemDesc": "An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap."
+        }]
+    },
+    {
+        "sectionId": "starters",
+        "sectionName": "Starters",
+        "sectionItems":[{
+            "itemId": "paneerTikka",
+            "itemName": "Paneer Tikka",
+            "itemPrice": 150,
+            "itemImage": "images/food_image.jpeg",
+            "itemVeg": true,
+            "itemDesc": "An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap."
+        },{
+            "itemId": "haraBharaKabab",
+            "itemName": "Hara Bhara Kabab",
+            "itemPrice": 200,
+            "itemImage": "images/food_image.jpeg",
+            "itemVeg": true,
+            "itemDesc": "An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap."
+        }]
+    },
+    {
+        "sectionId": "familyPack",
+        "sectionName": "Family Pack",
+        "sectionItems":[{
+            "itemId": "butterChickenBingePack",
+            "itemName": "Butter Chicken Binge Pack",
+            "itemPrice": 400,
+            "itemImage": "images/food_image.jpeg",
+            "itemVeg": false,
+            "itemDesc": "An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap."
+        },{
+            "itemId": "kadaiPaneerBingePack",
+            "itemName": "Kadai Paneer Binge Pack",
+            "itemPrice": 350,
+            "itemImage": "images/food_image.jpeg",
+            "itemVeg": true,
+            "itemDesc": "An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap."
+        }]
+    },
+    {
+        "sectionId": "mainCourse",
+        "sectionName": "Main Course",
+        "sectionItems":[{
+            "itemId": "eggCurry",
+            "itemName": "Egg Curry",
+            "itemPrice": 200,
+            "itemImage": "images/food_image.jpeg",
+            "itemVeg": false,
+            "itemDesc": "An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap."
+        },{
+            "itemId": "butter Chicken",
+            "itemName": "Butter Chicken",
+            "itemPrice": 250,
+            "itemImage": "images/food_image.jpeg",
+            "itemVeg": true,
+            "itemDesc": "An authentic veg platter with 3 pieces of Paneer Achari, 3 pieces of Hara Bhara, 3 pieces of Veg Seekh and 3 pieces of Malai Chaap."
+        }]
+    }
+    ]    
+}
